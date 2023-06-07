@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/carroFragment">
+
+    <fragment
+        android:id="@+id/carroFragment"
+        android:name="com.example.eletricarapp.ui.CarroFragment"
+        android:label="CarroFragment"
+        tools:layout="@layout/carro_fragment"/>
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.eletricarapp.ui.FavoritosFragment"
+        android:label="FavoritosFragment"
+        tools:layout="@layout/favoritos_fragment"/>
+</navigation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EletriCarApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.CalcularAutonomiaActivity" />
+    </application>
+
+</manifest>
+
+    <!-- &lt;!&ndash;O que é o Manifest? Basicamente, antes do sistema Android iniciar um
+        componente de aplicativo (exemplo: um service, uma tela), é preciso ler o arquivo de
+        manifesto (AndroidManifest.xml neste caso), todos seus componentes são declarados
+        neste arquivo (é necessário estar na raiz do projeto). Aqui, também colocaremos as
+        permissões do usuário que o aplicativo irá precisar, como por expemplo: ter acesso
+        a internet ou acesso aos contatos do usuário, etc. Também iremos definir o nível da API
+        mínimo exigido pelo aplicativo, com base nas APIs que o app usa (em qual versão do
+        Android você está compilando esse app). Também é possível declarar recursos de hardware e
+        software usados/exigidos pelo app, declarar bibliotecas de API que o app precisa pra ser vinculado,
+        ex: fornecer como biblioteca do google maps. Mudar o ícone do app, etc.-->
